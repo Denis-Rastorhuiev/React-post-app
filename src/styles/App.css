@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "e-Ukraine-Regular", Helvetica;
+}
+
+:root {
+    --dark-background-color: #0F172A;
+    --light-background-color: #162343;
+    --main-text-color: #E1E7EF;
+    --secondary-text-color: #8290A5;
+}
+
+#root{
+    flex-direction: column;
+    align-items: center;
+}
+.App{
+    margin-left: 15%;
+}
+
+.loginPage{
+    margin: 10% 40% ;
+}
+
+.post{
+    padding: 20px;
+    margin: 20px 0;
+    width: 70%;
+    border: black 2px solid;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.post-content{
+    float: left;
+}
+
+
+
+.post-opened{
+    margin: 5%;
+}
+
+.post-btn{
+    display: flex;
+}
+
+
+.post-btn-del{
+    color: black;
+    border:2px solid black;
+    background: var(--main-text-color);
+    padding: 7px;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.post-btn-del:hover{
+    background: black;
+    color: var(--main-text-color);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.post-enter {
+    opacity: 0;
+}
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.page__wrapper{
+    margin-top: 30px;
+    display: flex;
+}
+
+.page{
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.page__current{
+    border: 3px solid black;
+    font-weight: bolder;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-background-color);
+    overflow-x: hidden;
+    padding-top: 20px;
+    justify-content: center;
+    border-right: 3px var(--secondary-text-color) solid;
+}
+.sidenav__links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.sidenav__links__link{
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 22px;
+    margin:7px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin:0 0 25px 0;
+}
+.logo__text{
+    color: var(--main-text-color);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.topnav{
+    width: 100%;
+    display: flex;
+    background-color: var(--dark-background-color);
+    padding-left: 2%;
+    justify-content: space-between;
+    border-bottom: 3px var(--secondary-text-color) solid;
+}
+
+.topnav_btns{
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.wrapper{
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.addBtnMain_img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.addBtnMain_img:active{
+    filter: drop-shadow(0 0 0.1rem white);
+}
+
+.addBtnMain_img:hover{
+    filter: drop-shadow(0 0 0.5rem white);
+}
+
+.boxImgMagnifyingGlass{
+    width: 28px;
+    height: 28px;
+    background: #8290A5;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMagnifyingGlass{
+    width: 15px;
+    height: 15px;
+}
+
+.searchPost{
+    display: flex;
+    align-items: center;
+}
+
+.profileImg{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
